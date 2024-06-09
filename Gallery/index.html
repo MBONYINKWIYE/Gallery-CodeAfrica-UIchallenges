@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="album">
+        <div class="gallery">
+          <img src="images/mushroom.jpg" onclick="openImage('images/mushroom.jpg')" alt="mushroom.jpg">
+          <span>Flesh Harvest </span>
+         </div>
+
+        <div class="gallery">
+            <img src="images/package.jpg" onclick="openImage('images/package.jpg')" alt="package.jpg">
+            <span>Packaged Mix</span>
+        </div>
+
+        <div class="gallery">
+            <img src="images/oyster.jpg" onclick="openImage('images/oyster.jpg')" alt="oyster.jpg">
+            <span>Oyster Mushrooms </span>
+        </div>
+        <div class="gallery">
+            <img src="images/ontable.jpg" onclick="openImage('images/ontable.jpg')" alt="ontable.jpg">
+            <span>Decorated table</span>
+            
+        </div>    
+       
+</div>
+
+<div id="mySingle" class="single">
+        <span class="close" onclick="closeImage()">&times;</span>
+        <img class="single-content" id="singleImage">
+      </div>
+        <script src="script.js"></script>
+</body>
+</html>
